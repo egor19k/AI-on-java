@@ -1,5 +1,3 @@
-package com.GPCv4.NYD;
-
 import java.util.Random;
 
 public class N {
