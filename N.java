@@ -9,7 +9,7 @@ public class N {
     public String f = "w";
     public int layers;
 
-    private static Random rand = new Random();
+    public static Random rand = new Random();
 
     public N(int i, int h, int layers, int o) {
         this.layers = layers;
