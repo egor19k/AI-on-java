@@ -5,7 +5,7 @@ public class N {
     public double[][] H;
     public double[] O;
     public double[][][] W;
-    public double lr = 1;
+    public double lr = 0.4;
     public String f = "w";
     public int layers;
 
@@ -143,7 +143,7 @@ public class N {
         }
     }
     public void train(double[][][] D) {
-        train(D, 10000);
+        train(D, 1000);
     }
 
     public String save() {
