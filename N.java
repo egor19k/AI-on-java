@@ -143,7 +143,7 @@ public class N {
         }
     }
     public void train(double[][][] D) {
-        train(D, 1000);
+        train(D, 4000);
     }
 
     public String save() {
