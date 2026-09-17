@@ -1,3 +1,5 @@
+package com.gpcv4;
+
 import java.util.Random;
 
 public class N {
@@ -37,6 +39,14 @@ public class N {
 
     public double sd(double x) {
         return x * (1.0 - x);
+    }
+    
+    public double neuron(double[] X, double[] W) {
+        double sum = 0;
+        for (int i = 0; i < X.length; i++) {
+            sum = sum + X[i] * W[i];
+        }
+        return sum;
     }
 
     public double[] forward(double[] X) {
