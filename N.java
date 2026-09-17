@@ -8,7 +8,6 @@ public class N {
     public double[] O;
     public double[][][] W;
     public double lr = 0.4;
-    public String f = "w";
     public int layers;
 
     public static Random rand = new Random();
