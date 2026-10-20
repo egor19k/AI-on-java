@@ -37,6 +37,20 @@ public class N {
     public double sd(double x) {
         return x * (1.0 - x);
     }
+
+    public double[] softmax(double[] z) {
+        double max = z[0];
+        for (int i = 1; i < z.length; i++) if (z[i] > max) max = z[i];
+    
+        double[] out = new double[z.length];
+        double sum = 0;
+        for (int i = 0; i < z.length; i++) {
+            out[i] = Math.exp(z[i] - max);
+            sum += out[i];
+        }
+        for (int i = 0; i < z.length; i++) out[i] /= sum;
+        return out;
+    }
     
     public double neuron(double[] X, double[] W) {
         double sum = 0;
