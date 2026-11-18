@@ -33,9 +33,15 @@ public class N {
     public double s(double x) {
         return 1.0 / (1.0 + Math.exp(-x));
     }
-
     public double sd(double x) {
         return x * (1.0 - x);
+    }
+    
+    public double tanh(double x) {
+        return Math.tanh(x)
+    }
+    public double tanh_d(double x) {
+        return 1.0 - (x * x);
     }
 
     public double[] softmax(double[] z) {
