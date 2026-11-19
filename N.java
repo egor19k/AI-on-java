@@ -38,7 +38,7 @@ public class N {
     }
     
     public double tanh(double x) {
-        return Math.tanh(x)
+        return Math.tanh(x);
     }
     public double tanh_d(double x) {
         return 1.0 - (x * x);
